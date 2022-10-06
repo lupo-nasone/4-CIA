@@ -1,0 +1,44 @@
+*{
+    margin: 0!important;
+    padding: 0!important;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 95vh;
+}
+.header{
+    height: 5vh;
+}
+
+.abbonamenti{
+    width: 100%;
+    height: 50vh;
+    border: 3px black solid;
+}
+.ciao{
+    background-color: red;
+}
+
+.col-4{
+    border: red 3px solid;
+}
+.col-4 :first-child{
+    font-size: 50px;
+}
+.col-4 :nth-child(2){
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.col-4 :last-child{
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+}
+.col-6{
+    border: blue 3px solid;
+}
+h2 {
+    text-transform: uppercase;
+}
