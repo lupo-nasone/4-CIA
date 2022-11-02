@@ -9,3 +9,7 @@ function calcola() {
 
     console.log(valore);
 }
+
+function dark() {
+    document.body.classList.toggle("dark");
+}
