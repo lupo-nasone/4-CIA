@@ -1,0 +1,113 @@
+body{
+    background: rgb(52,7,74);
+background: radial-gradient(circle, rgba(52,7,74,1) 0%, rgba(11,11,107,1) 100%);
+padding: 0;
+margin: 0;
+}
+
+.text{
+    color: white;
+    width: 60%;
+    float: left;
+}
+
+.text h1{
+    text-transform: uppercase;
+    font-size: 100px;
+    margin: 20px;
+}
+
+.text p{
+    font-size: 30px;
+    margin: 20px;
+    margin-top: 200px;
+}
+
+.login{
+    background-color: white;
+    height: 100vh;
+    width: 40%;
+    float: right;
+}
+.in{
+    padding: 20px;
+}
+.in h1{
+    font-size: 70px;
+    margin: 20px;
+    margin-left: 0;
+}
+.in p{
+    font-size: 30px;
+}
+
+.in img{
+    width: 40px;
+}
+
+input{
+    border: none;
+    border-bottom: 3px black solid;
+    width: 80%;
+    height: 50px;
+}
+
+
+
+.a{
+    margin: 30px;
+    margin-left: 0;
+}
+
+#messaggio{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.errore{
+    background-color: rgb(228, 116, 116);
+}
+.giusto{
+    background-color: rgb(122, 196, 122);
+}
+
+#create{
+    color: rgb(0, 119, 255);
+    border-bottom: 1px solid rgb(0, 119, 255);
+}
+#create:hover{
+    cursor: pointer;
+}
+
+.creacc{
+    width: 100%;
+    height: auto;
+    background-color: grey;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    margin-top: 300px;
+}
+.creacc input{
+    border: 1px solid black;
+    width: 20%;
+}
+.creacc img{
+    width: 20px;
+    margin: 30px;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    .text{
+        display: none;
+    }
+    .login{
+        width: 100%;
+    }
+}
