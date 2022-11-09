@@ -1,113 +1,133 @@
 body{
-    background: rgb(52,7,74);
-background: radial-gradient(circle, rgba(52,7,74,1) 0%, rgba(11,11,107,1) 100%);
-padding: 0;
-margin: 0;
+    background: rgb(113,0,125);
+    background: radial-gradient(circle, rgba(113,0,125,1) 0%, rgba(19,81,111,1) 48%, rgba(0,9,85,1) 100%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .text{
-    color: white;
     width: 60%;
+    height: 100vh;
     float: left;
 }
-
 .text h1{
-    text-transform: uppercase;
-    font-size: 100px;
+    font-size: 80px;
     margin: 20px;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 20px;
 }
-
 .text p{
     font-size: 30px;
-    margin: 20px;
-    margin-top: 200px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
 }
 
 .login{
-    background-color: white;
-    height: 100vh;
     width: 40%;
-    float: right;
+    height: 100vh;
+    float: left;
+    background-color: white;
+    color: black;
+    text-align: center;
 }
-.in{
-    padding: 20px;
-}
-.in h1{
-    font-size: 70px;
+.login h1{
+    font-size: 60px;
+    text-transform: uppercase;
     margin: 20px;
-    margin-left: 0;
+    padding: 0;
+    padding-bottom: 20px;
 }
-.in p{
-    font-size: 30px;
-}
-
-.in img{
-    width: 40px;
-}
-
-input{
+.login input{
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    margin: 20px;
     border: none;
-    border-bottom: 3px black solid;
-    width: 80%;
-    height: 50px;
+    border-bottom: black 2px solid;
+    margin-bottom: 10px;
+}
+.login p{
+    margin: 20px;
+}
+.login h1{
+    text-align: center;
 }
 
-
-
-.a{
-    margin: 30px;
-    margin-left: 0;
-}
-
-#messaggio{
+button{
+    width: 30%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(90, 90, 235);
+    color: white;
     font-size: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 80%;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px;
+    transition: .5s;
 }
 
-.errore{
-    background-color: rgb(228, 116, 116);
-}
-.giusto{
-    background-color: rgb(122, 196, 122);
+.registrazione{
+    position: absolute;
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#create{
-    color: rgb(0, 119, 255);
-    border-bottom: 1px solid rgb(0, 119, 255);
+.registrazione input{
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    margin: 20px;
+    border: none;
+    border-bottom: black 2px solid;
+    margin-bottom: 10px;
 }
-#create:hover{
+
+span{
+    color: rgb(0, 60, 255);
     cursor: pointer;
 }
 
-.creacc{
-    width: 100%;
-    height: auto;
-    background-color: grey;
-    position: absolute;
-    text-align: center;
-    padding: 10px;
-    margin-top: 300px;
-}
-.creacc input{
-    border: 1px solid black;
-    width: 20%;
-}
-.creacc img{
-    width: 20px;
-    margin: 30px;
-}
-
-.hide{
+.hidden{
     display: none;
 }
 
-@media only screen and (max-width: 1000px){
+@media screen and (max-width: 1000px){
     .text{
         display: none;
     }
     .login{
         width: 100%;
+        height: 100vh;
+        float: none;
+        text-align: center;
     }
+}
+
+.success{
+    background-color: rgb(191, 255, 96);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.error{
+    background-color: rgb(255, 97, 97);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
 }
